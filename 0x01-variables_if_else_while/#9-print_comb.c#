@@ -1,0 +1,20 @@
+#include <stdio.h>
+/**
+ * main - print possible combination of single digit number
+ *
+ * return: (0) Sucess
+ */
+int main(void)
+{
+	int num;
+	int i;
+
+	for (num = 0; num <= 9; num++)
+	{
+		for (i = 0; i < 1; i++)
+			if 
+			putchar('0' + num) && putchar(',');
+	}
+	
+	return (0);
+}	
