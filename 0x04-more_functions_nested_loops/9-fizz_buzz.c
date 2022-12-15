@@ -1,28 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * fizz_buzz - prints nums from 1-100
- *
- *
- * Return: nums from 1-100
- */
+  * main - Prints a Fizz Buzz program
+  *
+  * Return: Always 0 (Success)
+  */
 int main(void)
 {
-		int i;
+	int x;
 
-		for (i = 1; i <= 100; i++)
+	for (x = 1; x <= 100; x++)
+	{
+		if ((x % 3 == 0) && (x % 5 == 0))
 		{
-			if (i % 3 == 0 && i % 5 == 0)
-				printf("FizzBuzz ");
-			else if (i % 3 == 0)
-				printf("Fizz ");
-			else if (i % 5 == 0)
-				printf("Buzz ");
-			else
-				printf("%d ", i);
+			printf("FizzBuzz");
 		}
-		printf("\n");
+		else if (x % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (x % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d", x);
+		}
 
+		if (x != 100)
+		{
+			printf(" ");
+		}
+	}
 
+	printf("\n");
+
+	return (0);
 }
