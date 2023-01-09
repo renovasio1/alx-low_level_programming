@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
+
+
+
+char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
 void _puts_recursion(char *s);
 int _putchar(char c);
 void _print_rev_recursion(char *s);
